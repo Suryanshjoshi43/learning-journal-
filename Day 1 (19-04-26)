@@ -1,0 +1,52 @@
+What I did today
+
+*Tools Installed
+- VS Code — the code editor I will use every day
+- Git — tracks every change I make to my code
+- Node.js (LTS) — lets JavaScript run on my computer
+- Python 3.11+ — needed for data and MLOps phases
+- Git Bash — terminal for running commands on Windows
+
+*VS Code Extensions Installed
+- Prettier — auto-formats code on save
+- GitLens — shows git history inside the editor
+- ESLint — catches JavaScript errors as I type
+- Python— makes VS Code understand Python
+- Thunder Client — test APIs without leaving VS Code
+
+*Git Configured
+- Set my name and email so every commit is linked to me
+- Set VS Code as the default Git editor
+
+*SSH Key Setup
+- Generated an ED25519 SSH key pair
+- Added the public key to GitHub
+- Tested the connection — GitHub recognised me successfully
+- Now I can push code without typing a password every time
+
+*GitHub Repository Created
+- learning-journal — daily notes, concepts, mistakes
+
+
+What I learned today
+
+- The terminal is how developers control their computer with text commands
+- SSH uses a key pair system — private key stays on my machine, public key goes on GitHub
+- Git tracks every change to code — nothing is ever truly lost
+- A .gitignore file tells Git which files to ignore (like node_modules)
+- npm is a package manager that comes with Node.js
+- Public repositories on GitHub are visible to recruiters worldwide
+
+*Mistakes I made today
+- Typed `catm` instead of `cat` with a space — learned that spaces matter in terminal commands
+- Used wrong terminal (Command Prompt) instead of Git Bash on Windows
+
+*How I fixed them
+- Read the error message carefully and spotted the typo
+- Switched to Git Bash which supports Linux-style commands
+
+*Reflection
+Day 1 was about building the foundation. No coding yet but every professional 
+tool is now set up correctly. My GitHub profile is live with 1 repositories. 
+Tomorrow the real learning begins — Web dev fundamentals.
+
