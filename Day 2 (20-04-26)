@@ -1,0 +1,145 @@
+Topics Covered Today
+
+HTML Tags
+Boilerplate Code
+Lists
+Attributes
+Image Element
+Inline vs Block Elements
+Div
+HR Tag
+Semantic Tags
+Sub and Super
+Semantic Markup
+HTML Entities
+Emmets
+
+
+What I Learned
+
+1. HTML Tags
+
+HTML is made of tags that tell the browser how to display content
+Most tags have an opening and closing tag: <p>text</p>
+Some tags are self-closing: <br> <img> <hr>
+
+
+2. Boilerplate Code
+
+Every HTML file starts with the same basic structure
+<!DOCTYPE html> tells the browser this is HTML5
+<head> contains meta information — not visible on page
+<body> contains everything the user sees
+
+
+3. Lists
+
+Unordered list <ul> — shows bullet points
+Ordered list <ol> — shows numbers
+Each item inside uses <li> tag
+
+
+4. Attributes
+
+Attributes give extra information to HTML tags
+Written inside the opening tag
+Format: attribute="value"
+Example: <a href="https://CSK.com">Click here</a>
+
+
+5. Image Element
+
+<img> tag displays images — self-closing, no closing tag needed
+src attribute — where the image is located
+alt attribute — describes the image for accessibility
+Every image must have an alt attribute
+
+
+6. Inline vs Block Elements
+
+Block elements take full width and start on a new line
+
+Examples: <div> <p> <h1> <ul>
+
+
+Inline elements only take as much space as their content
+
+Examples: <span> <a> <strong> <img>
+
+
+Rule: cannot put a block element inside an inline element
+
+
+7. Div
+
+Generic block container with no meaning on its own
+Used to group elements together for layout or styling
+Think of it as a box that holds other elements
+
+
+8. HR Tag
+
+<hr> stands for Horizontal Rule
+Draws a horizontal line across the page
+Self-closing — used to visually separate sections
+
+
+9. Semantic Tags
+
+Tags that clearly describe their meaning
+Examples: <header> <footer> <nav> <main> <section> <article> <aside>
+<div> and <span> are non-semantic — they describe nothing
+
+
+10. Sub and Super
+
+<sub> — subscript, appears below the normal line — example: H₂O
+<sup> — superscript, appears above the normal line — example: 10²
+
+
+11. Semantic Markup
+
+Writing HTML that describes the meaning of content
+Helps search engines understand your page (SEO)
+Helps screen readers for visually impaired users
+Bad practice: using <div> for everything
+Good practice: <nav> for navigation, <article> for blog posts, <footer> for footer
+
+
+12. HTML Entities
+
+Special characters written as &name; so HTML does not misread them
+&lt; →
+&gt; → >
+&amp; → &
+&copy; → ©
+&nbsp; → non-breaking space
+
+
+13. Emmets
+
+Shortcut system built into VS Code for writing HTML faster
+Type the shortcut then press Tab to expand
+! → full boilerplate
+ul>li*3 → ul with 3 li items
+h1+p → h1 followed by p
+.container → <div class="container"></div>
+
+
+Mistakes I Made Today
+
+Forgot to add alt attribute on image tags
+Confused inline and block elements initially
+Used <div> everywhere instead of semantic tags
+
+How I Fixed Them
+
+Rule: every <img> must always have an alt attribute
+Rule: starts on new line → block. Flows with text → inline
+Rule: content has meaning → semantic tag. Just a container → div
+
+Reflection
+HTML is the skeleton of every webpage. It does not make things look good —
+that is CSS. But without proper structure nothing else works correctly.
+The most important lesson today was semantic markup — writing HTML that
+means something, not just HTML that works.
