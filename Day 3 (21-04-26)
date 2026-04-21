@@ -1,0 +1,120 @@
+What did i today 
+
+Tables
+Forms
+Placeholder
+Label Elements
+Button
+Input
+Name Attribute
+
+
+What I Learned
+1. Tables
+
+Used to display data in rows and columns
+<table> — wraps the entire table
+<tr> — table row
+<th> — table header cell (bold by default)
+<td> — table data cell
+<thead> — groups the header rows
+<tbody> — groups the body rows
+Always use thead and tbody for proper structure
+
+
+2. Forms
+
+Forms collect information from the user
+<form> — wraps all form elements
+action attribute — where the form data is sent
+method attribute — how it is sent (GET or POST)
+GET — data visible in the URL, used for search
+POST — data hidden, used for login and signup
+Example: <form action="/submit" method="POST">
+
+
+3. Placeholder
+
+Placeholder is an attribute on input fields
+Shows hint text inside the input box
+Disappears when the user starts typing
+Used to guide the user on what to enter
+Example: <input placeholder="Enter your email">
+Placeholder is NOT a label — it disappears and is not accessible
+
+
+4. Label Elements
+
+<label> describes what an input field is for
+Always connect a label to its input using for and id
+When user clicks the label, the input gets focused
+Important for accessibility — screen readers read the label
+Example:
+
+<label for="email">Email</label>
+<input id="email" type="email">
+
+
+
+
+5. Button
+
+<button> creates a clickable button
+Types of buttons:
+
+type="submit" — submits the form (default inside a form)
+type="button" — does nothing by default, used with JavaScript
+type="reset" — clears all form fields
+
+
+Always specify the type to avoid unexpected behaviour
+Example: <button type="submit">Sign Up</button>
+
+
+6. Input
+
+<input> is the most used form element
+Self-closing tag — no closing tag needed
+type attribute controls what kind of input it is
+Common types:
+
+type="text" — single line text
+type="email" — validates email format
+type="password" — hides characters
+type="number" — only allows numbers
+type="checkbox" — tick box
+type="radio" — select one from a group
+type="file" — upload a file
+type="date" — date picker
+
+
+Example: <input type="email" id="email" placeholder="Enter email">
+
+
+7. Name Attribute
+
+name attribute identifies the input when form is submitted
+The name becomes the key in the data sent to the server
+Without a name attribute the input data is not sent at all
+Example: <input type="text" name="username">
+When submitted this sends: username=whatever_the_user_typed
+Every input inside a form must have a name attribute
+
+
+Mistakes I Made Today
+
+Used placeholder instead of label thinking they are the same
+Forgot to add name attribute on inputs — data was not being sent
+Did not specify type on button — caused form to submit unexpectedly
+
+How I Fixed Them
+
+Rule: always use <label> for accessibility, placeholder is just a hint
+Rule: every input must have a name attribute or the data is lost
+Rule: always write type="button" or type="submit" explicitly on every button
+
+Reflection
+Forms are how websites collect data from users — login, signup, search,
+checkout. Everything goes through a form. Today I learned that small
+things like missing a name attribute or not connecting a label properly
+can break the entire form silently. Attention to detail matters even in HTML.
