@@ -1,0 +1,18 @@
+what did i do today
+
+Today, I have been developing a fully functional **Student Registration Portal utilizing basic HTML** in an effort to gain valuable insight into HTML basics through the use of forms and tables.
+
+In order to properly create a structured webpage, I started off with the use of semantic tags such as `<header>`, `<section>`, and `<footer>`. Then I progressed to creating a registration form, which had multiple types of user inputs - Text, email, password, numerical, date, and file upload. Finally, I added radio buttons for the purpose of selecting gender, and checkboxes for course choices.
+
+A significant improvement that I accomplished today was linking `<label>` elements to relevant input fields via use of `for` and `id`, as it improves accessibility (important to note is that doing so adheres to best practice). Additionally, to aid in successfully returning submitted form data to the backend via the `name` attribute for each input field, all fields contain a `name` attribute. Additionally, all input fields within the form will include placeholders along with basic validation utilizing the `required` attribute.
+
+The next phase in today's learning was creating a table in which to present the registered student data utilizing `<table>`, `<tr>`, `<th>`, and `<td>`. Doing so has given me greater insight into the organization of data and how to display structured data via HTML elements.
+
+Today's practice is as follows:
+
+-  Forms in HTML (structure form, inputs within the form, and labels)
+-  Input types and their attributes (placeholders, required, name)
+-  Form buttons (submit and reset)
+-  Tables (data representation)
+
+Overall, today's practice has improved my comprehension of how frontend forms will function when interacting via submission, as well as how data are structurally represented.
