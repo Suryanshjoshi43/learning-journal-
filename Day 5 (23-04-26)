@@ -1,0 +1,94 @@
+what did i do today 
+
+1. Checkbox
+
+Used when the user can select MULTIPLE options at the same time
+Each checkbox is independent of the others
+All checkboxes in a group share the same name but different value
+type="checkbox" inside an input tag
+Example:
+
+<input type="checkbox" id="html" name="skills" value="html" />
+<label for="html">HTML</label>
+
+
+
+
+2. Radio Button
+
+Used when the user can select ONLY ONE option from a group
+All radio buttons in a group must share the same name
+Selecting one automatically deselects the others
+type="radio" inside an input tag
+Example:
+
+<input type="radio" id="male" name="gender" value="male" />
+<label for="male">Male</label>
+
+
+Key difference from checkbox — checkbox allows many selections, radio allows only one
+
+
+3. Dropdown
+
+Used when there are many options but only one can be selected
+Saves space compared to showing all radio buttons
+Uses <select> tag wrapping multiple <option> tags
+First option is usually a placeholder with empty value
+Example:
+
+html<select name="country">
+  <option value="">-- Select Country --</option>
+  <option value="australia">Australia</option>
+  <option value="india">India</option>
+</select>
+
+4. Range
+
+A slider input that lets user pick a value between min and max
+Uses min, max, and step attributes
+step controls how much it moves per slide
+The selected value is not shown automatically — needs JavaScript to display
+Example:
+
+<input type="range" name="salary" min="0" max="100" step="5" />
+
+
+
+
+5. Textarea
+
+Used for multi-line text input
+Unlike <input>, it has an opening and closing tag
+rows controls the visible height
+cols controls the visible width
+User can resize it by default
+Example:
+
+<textarea name="message" rows="4" placeholder="Write here..."></textarea>
+
+
+Key difference from input text — input is single line, textarea is multi-line
+
+
+Difference Between All Form Elements
+ElementUse CaseMultiple Selecttext inputSingle line short textNotextareaMulti-line long textNocheckboxSelect many from manyYesradioSelect one from manyNodropdownSelect one from many optionsNorangeSelect a value on a scaleNo
+
+Mistakes I Made Today
+
+Used checkbox where radio was needed — user could select multiple experience levels
+Forgot to give same name to radio buttons — they were not deselecting each other
+Did not add a placeholder option in dropdown — user had no default prompt
+
+How I Fixed Them
+
+Rule: multiple selections allowed → checkbox. Only one allowed → radio
+Rule: all radio buttons in one group must have exactly the same name
+Rule: always add an empty first option in dropdown as a prompt
+
+Reflection
+Today I completed all major form elements. Now I understand how to collect
+any type of user input — short text, long text, single choice, multiple
+choice, scale values, and selections from a list. Forms are the foundation
+of every web application. Every login, signup, survey, and checkout uses
+exactly these elements.
