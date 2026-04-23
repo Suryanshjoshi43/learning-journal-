@@ -14,8 +14,6 @@ To become a job-ready engineer capable of working in:
 - DevOps & Platform Engineering
 - MLOps (Machine Learning Operations)
 
-## Daily Log
-19-04-26: Created repo + environment setup  
-20-04-26: Started HTML 
-21-04-26: Further HTML understanding
+
+
 
