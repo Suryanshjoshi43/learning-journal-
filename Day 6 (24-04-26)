@@ -1,0 +1,90 @@
+What I Did Today
+
+Revised and practiced all HTML tags learned so far
+Built a basic portfolio using pure HTML
+Built small mini projects to solidify understanding
+Completed HTML fundamentals section
+
+
+<!DOCTYPE html> — declares HTML5 document
+<html> — root element of the page
+<head> — contains meta information not visible on page
+<body> — contains everything visible to the user
+<title> — sets the browser tab title
+<meta> — defines charset, viewport, description
+Heading Tags
+
+<h1> to <h6> — six levels of headings
+<h1> is the most important — only one per page
+<h6> is the smallest and least important
+Used for structure and SEO — not just for making text big
+Text Tags
+
+<p> — paragraph
+<span> — inline container for text
+<strong> — bold text with importance
+<em> — italic text with emphasis
+<br> — line break — self closing
+<hr> — horizontal line — self closing
+<sub> — subscript text below the line
+<sup> — superscript text above the line
+List Tags
+
+<ul> — unordered list with bullet points
+<ol> — ordered list with numbers
+<li> — list item used inside both ul and ol
+Link and Image Tags
+
+<a href=""> — anchor tag for links
+target="_blank" — opens link in new tab
+<img src="" alt=""> — displays image — self closing
+alt is required for accessibility
+Semantic Tags
+
+<header> — top section of page or section
+<nav> — navigation links
+<main> — main content of the page
+<section> — a standalone section of content
+<article> — independent self contained content
+<aside> — sidebar or related content
+<footer> — bottom section of page
+Table Tags
+
+<table> — wraps the entire table
+<thead> — groups header rows
+<tbody> — groups body rows
+<tr> — table row
+<th> — header cell — bold by default
+<td> — data cell
+Form Tags
+
+<form> — wraps all form elements
+<input> — self closing — many types
+<label> — describes an input
+<textarea> — multi line text input
+<select> — dropdown
+<option> — item inside dropdown
+<button> — clickable button
+Division and Layout Tags
+
+<div> — generic block container
+<span> — generic inline container
+Other Tags
+
+<title> — browser tab name
+<!--comment--> — comment not visible on page
+&copy; &amp; &lt; &gt; &nbsp; — HTML entities
+
+Mistakes I Made Today
+
+Used <h1> multiple times on one page — incorrect for SEO
+Forgot alt on some images — accessibility issue
+Used <div> instead of <section> and <article> — not semantic
+Opened a tag but forgot to close it — entire layout broke
+
+How I Fixed Them
+
+Rule: only one <h1> per page — use <h2> and <h3> for subsections
+Rule: every image needs alt — no exceptions
+Rule: ask myself — does this content have a meaning? Use semantic. Just grouping? Use div
+Rule: always close tags immediately after opening before writing content inside
