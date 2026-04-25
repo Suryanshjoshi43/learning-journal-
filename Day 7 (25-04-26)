@@ -1,0 +1,263 @@
+what did i do today
+
+Inline Style
+Color Property
+Text Properties
+Selectors
+Class Selector
+ID Selector
+Descendant Selector
+Adjacent Sibling Selector
+Child Combinator
+Box Model
+Height and Width
+Border
+Sides
+
+
+What I Learned
+1. Inline Style
+
+CSS written directly inside an HTML tag using the style attribute
+Only affects that one specific element
+Highest priority — overrides all other CSS
+Bad practice for large projects — hard to maintain
+Example: <p style="color: red; font-size: 18px;">Hello</p>
+Rule: avoid inline styles — use external CSS files instead
+
+
+2. Color Property
+
+Controls the color of text
+Four ways to write colors:
+
+Named: color: red
+HEX: color: #e74c3c
+RGB: color: rgb(231, 76, 60)
+RGBA: color: rgba(231, 76, 60, 0.5) — last value is opacity
+
+
+background-color — sets the background color of an element
+HEX and RGB are most commonly used in real projects
+
+
+3. Text Properties
+
+font-size — size of the text — use px or rem
+font-weight — thickness of text — normal, bold, or number (100–900)
+font-family — typeface of text — always add fallback fonts
+font-style — normal or italic
+text-align — left, right, center, justify
+text-decoration — underline, overline, line-through, none
+text-transform — uppercase, lowercase, capitalize
+letter-spacing — space between individual letters
+line-height — space between lines of text
+Example:
+
+cssp {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  line-height: 1.6;
+}
+
+4. Selectors
+
+Selectors tell CSS which HTML element to style
+Types practiced today:
+
+SelectorSyntaxWhat it targetsElementpAll p tagsClass.boxAll elements with class boxID#titleOne element with id titleDescendantdiv pAll p inside any divChilddiv > pOnly direct p children of divAdjacent Siblingh1 + pFirst p immediately after h1
+
+5. Class Selector
+
+Targets elements using the class attribute
+Written with a dot prefix: .classname
+Same class can be used on multiple elements
+One element can have multiple classes
+Most used selector in real projects
+Example:
+
+css.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+html<div class="card">Content</div>
+<div class="card">Content</div>
+
+6. ID Selector
+
+Targets one specific element using the id attribute
+Written with a hash prefix: #idname
+ID must be unique — only one element per page can have the same ID
+Higher specificity than class — overrides class styles
+Example:
+
+css#hero {
+  background-color: #1a237e;
+  color: white;
+}
+html<section id="hero">Main Banner</section>
+
+Rule: use class for reusable styles, use ID only when the element is truly unique
+
+
+7. Descendant Selector
+
+Targets elements that are anywhere inside another element
+Written with a space between selectors
+Targets all matching descendants — not just direct children
+Example:
+
+cssdiv p {
+  color: gray;
+}
+
+This targets ALL <p> tags inside ANY <div> — no matter how deeply nested
+
+
+8. Adjacent Sibling Selector
+
+Targets the element that comes immediately after another element
+Written with a + between selectors
+Both elements must share the same parent
+Only targets the very first sibling — not all siblings after
+Example:
+
+cssh1 + p {
+  font-size: 18px;
+  color: gray;
+}
+
+This targets only the first <p> that comes directly after an <h1>
+
+
+9. Child Combinator
+
+Targets only the DIRECT children of an element
+Written with a > between selectors
+More specific than descendant selector
+Does not target grandchildren or deeper nested elements
+Example:
+
+cssul > li {
+  color: blue;
+}
+
+This targets only <li> that are direct children of <ul>
+Key difference from descendant: descendant targets all levels, child targets only one level deep
+
+
+10. Box Model
+
+Every HTML element is a rectangular box
+The box model has 4 layers from inside to outside:
+
+Content — the actual text or image
+Padding — space between content and border
+Border — the line around the padding
+Margin — space outside the border between elements
+
+
+Understanding box model is essential for layout
+
+┌──────────────────────────┐
+│         MARGIN           │
+│  ┌────────────────────┐  │
+│  │      BORDER        │  │
+│  │  ┌──────────────┐  │  │
+│  │  │   PADDING    │  │  │
+│  │  │  ┌────────┐  │  │  │
+│  │  │  │CONTENT │  │  │  │
+│  │  │  └────────┘  │  │  │
+│  │  └──────────────┘  │  │
+│  └────────────────────┘  │
+└──────────────────────────┘
+
+11. Height and Width
+
+width — controls horizontal size of element
+height — controls vertical size of element
+Values: px, %, vw, vh, auto
+max-width — element will not grow beyond this value
+min-width — element will not shrink below this value
+max-height and min-height work the same way
+Example:
+
+css.card {
+  width: 300px;
+  height: 200px;
+  max-width: 100%;
+}
+
+Rule: always set max-width: 100% on images to prevent overflow
+
+
+12. Border
+
+border shorthand: border: width style color
+Example: border: 2px solid black
+Border styles: solid, dashed, dotted, double, none
+border-radius — rounds the corners of the border
+Example:
+
+css.box {
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+13. Sides — Padding, Margin, Border Sides
+
+All four sides can be set individually or with shorthand
+Shorthand order: top, right, bottom, left (clockwise)
+
+css/* All four sides same */
+padding: 20px;
+
+/* Top-bottom | Left-right */
+padding: 10px 20px;
+
+/* Top | Left-right | Bottom */
+padding: 10px 20px 30px;
+
+/* Top | Right | Bottom | Left */
+padding: 10px 20px 30px 40px;
+
+Individual sides:
+
+padding-top, padding-right, padding-bottom, padding-left
+margin-top, margin-right, margin-bottom, margin-left
+border-top, border-right, border-bottom, border-left
+
+
+
+
+Specificity — Which Style Wins?
+SelectorSpecificityInline styleHighestID #idHighClass .classMediumElement pLow
+
+When two rules conflict the one with higher specificity wins
+When specificity is equal the one written later in the file wins
+
+
+Mistakes I Made Today
+
+Used ID selector for multiple elements — IDs must be unique
+Confused descendant and child selector — descendant targets all levels, child targets one
+Forgot shorthand order for padding — always clockwise: top right bottom left
+Set height on a container — content overflowed when text increased
+
+How I Fixed Them
+
+Rule: class for reusable styles, ID only for truly unique elements
+Rule: space between selectors = descendant, > between = direct child only
+Rule: remember TRBL — Top Right Bottom Left for shorthand
+Rule: avoid fixed heights on containers — let content determine height naturally
+
+Reflection
+CSS is what makes websites look good. Today I learned how CSS finds elements
+using selectors and how it applies styles to them. The box model is the
+most important concept in CSS layout — every single element on every
+website is a box with content, padding, border, and margin. Once I
+understood the box model everything about spacing and layout started
+making sense.
