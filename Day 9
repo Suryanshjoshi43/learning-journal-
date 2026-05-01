@@ -1,0 +1,153 @@
+what i did today
+
+### 1. Display Flex
+
+Converted normal containers into flex containers using `display: flex`
+Saw how elements that were stacking vertically started aligning in a row
+Understood that Flexbox works on a **parent → child relationship**
+Applied it on multiple containers to observe default behavior
+
+---
+
+### 2. Flex Direction
+
+Used `flex-direction` to control the main axis
+Tested `row`, `row-reverse`, `column`, `column-reverse`
+Observed how direction changes the flow of items
+Understood that axis changes everything (alignment behaves differently based on direction)
+
+---
+
+### 3. Justify Content
+
+Aligned items along the **main axis**
+Used values: `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `space-evenly`
+Visually compared spacing differences between each value
+Understood it controls horizontal alignment in row and vertical in column
+
+---
+
+### 4. Align Items
+
+Aligned items along the **cross axis**
+Used values: `stretch`, `flex-start`, `flex-end`, `center`, `baseline`
+Observed how height changes when using `stretch`
+Learned that it controls vertical alignment in row direction
+
+---
+
+### 5. Align Content
+
+Used on multi-line flex containers
+Applied `flex-wrap: wrap` first to activate it
+Tested values like `center`, `space-between`, `space-around`
+Understood it works only when there are **multiple rows of items**
+
+---
+
+### 6. Flex Wrap
+
+Controlled whether items stay in one line or wrap
+Used `nowrap`, `wrap`, `wrap-reverse`
+Observed overflow when wrapping was disabled
+Saw how items move to the next line when space is insufficient
+
+---
+
+### 7. Gap
+
+Added spacing between flex items using `gap`
+Compared it with margin
+Understood that gap is cleaner and avoids margin side effects
+
+---
+
+### 8. Flex Grow
+
+Allowed items to grow and take available space
+Assigned different grow values to items
+Observed proportional expansion
+Understood how space is distributed dynamically
+
+---
+
+### 9. Flex Shrink
+
+Controlled how items shrink when space is limited
+Tested different shrink values
+Saw how some items shrink more than others
+Understood its role in responsive layouts
+
+---
+
+### 10. Flex Basis
+
+Defined the initial size of items before grow/shrink
+Compared `flex-basis` with width
+Observed how it affects layout calculation
+Understood it is part of the flex sizing algorithm
+
+---
+
+### 11. Flex Shorthand
+
+Used `flex: grow shrink basis`
+Replaced multiple properties with one line
+Tested combinations like `flex: 1`, `flex: 2`, `flex: 0 1 auto`
+Understood shorthand is commonly used in real projects
+
+---
+
+### 12. Align Self
+
+Overrode alignment for individual items
+Applied different values on single items
+Saw how one item behaves differently from others
+Understood it overrides `align-items`
+
+---
+
+### 13. Order
+
+Changed visual order of items without changing HTML
+Assigned different order values
+Observed rearrangement in layout
+Understood it only affects visual order, not DOM structure
+
+---
+
+## Key Observations From Practical
+
+Flexbox is one-dimensional — it works either in row or column
+Main axis vs cross axis understanding is the core of Flexbox
+`justify-content` and `align-items` depend on direction
+Flexbox removes the need for floats and manual spacing hacks
+`gap` is cleaner than using margins for spacing
+Flex properties (`grow`, `shrink`, `basis`) control responsive behavior
+Flexbox is best for aligning and distributing space in components
+
+---
+
+## Mistakes I Made During Practical
+
+Used `align-content` without enabling wrapping — no effect was visible
+Confused main axis and cross axis — alignment looked incorrect
+Used margin instead of gap — spacing became inconsistent
+Set fixed width on items — flex-grow was not working properly
+Expected `order` to change HTML structure
+
+---
+
+## How I Fixed Them
+
+Enabled `flex-wrap: wrap` before using `align-content`
+Clearly identified main axis using `flex-direction`
+Replaced margin spacing with `gap`
+Removed fixed widths to allow flexible sizing
+Understood `order` only changes visual position, not DOM
+
+---
+
+## Reflection
+
+Flexbox made layout control feel structured and predictable. The biggest shift was understanding **axis-based thinking** — once the main axis is clear, everything else becomes logical. Seeing how items expand, shrink, and align dynamically made it clear why Flexbox is heavily used in modern UI design. It removes the need for hacks and makes responsive layouts much easier to build.
